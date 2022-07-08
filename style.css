@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+    height: 100;
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.header__item {
+    transition: color 0.5s ease-in-out;
+}
+
+.header__item:not(.active):hover {
+    color: red;
+}
+
+.active {
+    background-color: yellow;
+}
