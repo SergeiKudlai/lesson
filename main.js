@@ -24,3 +24,5 @@ submitButtonClose.addEventListener('click', () => {
     document.querySelector('.submit__result').innerText = '';
     document.querySelector('.submit__message-block').classList.add('submit__message-block--active');
 })
+
+
