@@ -2,31 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
 
-    <header class="header">
-        <nav class="header__menu">
+  <header class="header">
+    <nav class="header__menu">
 
-            <ul class="header__list">
-                <li class="header__item active">Text1</li>
+      <ul class="header__list">
+        <li class="header__item header__item--active">Text1</li>
 
-                <li class="header__item">Text2</li>
+        <li class="header__item">Text2</li>
 
-                <li class="header__item">Text3</li>
-            </ul>
+        <li class="header__item">Text3</li>
+      </ul>
 
-        </nav>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <section class="submit">
+      <h2 class="submit__titile">Секция 2</h2>
+
+      <input type="text" class="submit__subject">
+      <button class="submit__btn" type="submit">Submit</button>
+
+      <div class="submit__message-block submit__message-block--active">
+
+        <div class="submit__message">
+
+          <p class="submit__text">Text:
+            <span class="submit__result"></span>
+          </p>
+
+          <br>
+          <button class="submit__close-btn">OK</button>
+
+        </div>
+      </div>
+
+    </section>
 
 
-    </header>
+
+  </main>
 
 </body>
 
