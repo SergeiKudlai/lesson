@@ -6,7 +6,7 @@ const allSection = document.querySelectorAll('.section');
 const sectionPortfolio = document.querySelector('.Portfolio');
 const mainBtn = document.querySelector('.main__btn');
 
-
+// click active menu
 headerItemLink.forEach((element) => {
   element.addEventListener('click', (event) => {
     for (element of headerItemLink) {
@@ -27,7 +27,7 @@ submitButtonClose.addEventListener('click', () => {
   document.querySelector('.submit__message-block').classList.add; ('submit__message-block--active');
 })
 
-
+// scroll
 addEventListener('scroll', onscroll);
 addEventListener('scroll', btnActive);
 
@@ -50,7 +50,7 @@ function onscroll() {
   });
 }
 
-
+//button scrollUP
 function btnActive() {
   const pageCur = window.scrollY;
   pageCur > 200 ? mainBtn.classList.remove('main__btn--active') : mainBtn.classList.add('main__btn--active');

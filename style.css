@@ -61,6 +61,7 @@ button {
 .header {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: blue;
 }
 
 .header__menu {
@@ -92,6 +93,7 @@ button {
 .main__btn {
   border: 1px solid black;
   border-radius: 50%;
+  margin-right: 1rem;
   width: 4.4rem;
   height: 4.4rem;
   background: url("img/arrowUp.png") no-repeat center/cover;
@@ -102,6 +104,33 @@ button {
 
 .main__btn--active {
   display: none;
+}
+
+.home__title {
+  margin-bottom: 8rem;
+}
+
+.home__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.home__item {
+  flex: 1 0 20%;
+}
+
+.home__item::before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
+.home__item-element {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
 
 .submit__message-block {
@@ -129,7 +158,8 @@ button {
 
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   border: 1px solid red;
   padding-top: 2.5rem;

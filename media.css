@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .home__item {
+    flex: 1 0 25%;
+  }
+}
+
+@media (max-width: 375px) {
+  .home__list {
+    gap: 1rem;
+  }
+
+  .home__item {
+    flex: 1 0 35%;
+  }
+}
