@@ -8,9 +8,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
-  <!-- <link rel="stylesheet" href="./css/fonts.css"> -->
   <script src="main.js" type="module" defer></script>
   <script src="./js/scroll.js" type="module" defer></script>
+  <script src="./js/tabs.js" type="module" defer></script>
 </head>
 
 <body class="body">
@@ -107,6 +107,46 @@
 
     <section id="About" class="section About ">
       <h2 class="section__title">About</h2>
+
+      <div class="About__inner">
+
+        <ul class="About__buttons aboutButtons">
+          <li class="aboutButtons__item ">
+            <button class="aboutButtons__btn aboutButtons__btn--active" type="button" data-btn="1">
+              Кнопка 1
+            </button>
+          </li>
+
+          <li class="aboutButtons__item">
+            <button class="aboutButtons__btn" type="button" data-btn="2">
+              Кнопка 2
+            </button>
+          </li>
+
+          <li class="aboutButtons__item">
+            <button class="aboutButtons__btn" type="button" data-btn="3">
+              Кнопка 3
+            </button>
+          </li>
+        </ul>
+
+        <ul class="About__text aboutText">
+          <li class="aboutText__item aboutText__item--active" data-text="1">
+            text 1
+          </li>
+
+          <li class="aboutText__item" data-text="2">
+            text 2
+          </li>
+
+          <li class="aboutText__item" data-text="3">
+            text 3
+          </li>
+        </ul>
+
+      </div>
+
+
     </section>
 
     <section id="Contact" class="section Contact">
