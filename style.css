@@ -1,11 +1,19 @@
 html {
   box-sizing: border-box;
-  height: 100;
+  height: 100%;
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
 body {
   font-size: 1.6rem;
+  margin: 0;
 }
 
 h1,
@@ -29,6 +37,21 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 123rem;
   margin: 0 auto;
@@ -37,6 +60,14 @@ p {
 
 .header {
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header__menu {
+  position: fixed;
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
 }
 
 .header__list {
@@ -54,8 +85,23 @@ p {
   color: red;
 }
 
-.header__item--active {
+.header__item-link--active {
   background-color: yellow;
+}
+
+.main__btn {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 4.4rem;
+  height: 4.4rem;
+  background: url("img/arrowUp.png") no-repeat center/cover;
+  position: sticky;
+  left: 100%;
+  bottom: 2rem;
+}
+
+.main__btn--active {
+  display: none;
 }
 
 .submit__message-block {
@@ -79,6 +125,18 @@ p {
   border: 2px solid black;
   text-align: center;
   background-color: white;
+}
+
+
+.section {
+  height: 100vh;
+  width: 100%;
+  border: 1px solid red;
+  padding-top: 2.5rem;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .section__title {
