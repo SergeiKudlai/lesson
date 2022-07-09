@@ -1,3 +1,5 @@
+@import url('./fonts.css');
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -96,7 +98,7 @@ button {
   margin-right: 1rem;
   width: 4.4rem;
   height: 4.4rem;
-  background: url("img/arrowUp.png") no-repeat center/cover;
+  background: url("../img/arrowUp.png") no-repeat center/cover;
   position: sticky;
   left: 100%;
   bottom: 2rem;
@@ -171,4 +173,6 @@ button {
 
 .section__title {
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
