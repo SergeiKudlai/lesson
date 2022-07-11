@@ -1,0 +1,28 @@
+.About__inner {
+  border: 1px solid black;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.About__buttons {
+  margin-bottom: 1.5rem;
+}
+
+.aboutButtons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.aboutButtons__btn--active {
+  background-color: yellow;
+}
+
+.aboutText__item {
+  display: none;
+}
+
+.aboutText__item--active {
+  display: block;
+}
