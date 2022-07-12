@@ -1,4 +1,4 @@
-import { contactBtn, contactSpan, contactBtnNext } from './variables.js';
+import * as vars from './variables.js';
 
 function counter() {
 
@@ -12,11 +12,11 @@ function counter() {
     }
   }
 
-  for (let i = 0; i < contactBtn.length; i++) {
+  for (let i = 0; i < vars.contactBtn.length; i++) {
     const counter = new Counter();
-    const currentBtn = contactBtn[i];
-    const currentBtnNext = contactBtnNext[i];
-    const currentSpan = contactSpan[i];
+    const currentBtn = vars.contactBtn[i];
+    const currentBtnNext = vars.contactBtnNext[i];
+    const currentSpan = vars.contactSpan[i];
     currentSpan.innerHTML = counter.count;
 
 

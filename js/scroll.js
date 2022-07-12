@@ -1,8 +1,5 @@
+import { mainBtn, allSection, headerItemLink } from './variables.js';
 //button scrollUP
-const mainBtn = document.querySelector('.main__btn');
-const allSection = document.querySelectorAll('.section');
-const headerItemLink = document.querySelectorAll('.header__item-link');
-
 function btnActive() {
   const pageCur = window.scrollY;
   pageCur > 200 ? mainBtn.classList.remove('main__btn--active') : mainBtn.classList.add('main__btn--active');
@@ -10,7 +7,7 @@ function btnActive() {
 
 mainBtn.addEventListener('click', () => {
   window.scrollTo(0, 0);
-}); 
+});
 
 
 // page scroll
