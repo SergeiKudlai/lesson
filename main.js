@@ -1,8 +1,12 @@
 import { btnActive, onscroll } from './js/scroll.js';
+import { counter } from './js/counter.js';
 
 // scroll
 addEventListener('scroll', onscroll);
 addEventListener('scroll', btnActive);
+
+//counter
+counter();
 
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
@@ -29,7 +33,7 @@ submitButton.addEventListener('click', () => {
 
 submitButtonClose.addEventListener('click', () => {
   submitSubject.value = '';
-  document.querySelector('.submit__result').innerText = '';
+  document.querySelector('.submit__result').innerText = ''
   document.querySelector('.submit__message-block').classList.add; ('submit__message-block--active');
 })
 

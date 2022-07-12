@@ -1,5 +1,5 @@
-@import url('./fonts.css');
-@import url('./tabs.css');
+@import url("./fonts.css");
+@import url("./tabs.css");
 
 html {
   box-sizing: border-box;
@@ -159,7 +159,6 @@ button {
   background-color: white;
 }
 
-
 .section {
   min-height: 100vh;
   height: 100%;
@@ -176,4 +175,22 @@ button {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+.contact__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.contact__btn {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-right: 0.5rem;
+}
+
+.contact__btn--prev {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-left: 0.5rem;
 }

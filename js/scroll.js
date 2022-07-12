@@ -10,13 +10,14 @@ function btnActive() {
 
 mainBtn.addEventListener('click', () => {
   window.scrollTo(0, 0);
-});
+}); 
 
 
 // page scroll
 function onscroll() {
 
   const pageCur = window.pageYOffset;
+
   allSection.forEach((element) => {
 
     if (element.offsetTop <= pageCur && (element.offsetTop + element.offsetHeight) > pageCur) {
