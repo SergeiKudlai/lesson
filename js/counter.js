@@ -40,22 +40,5 @@ function counter() {
       examination();
     })
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 export { counter };
