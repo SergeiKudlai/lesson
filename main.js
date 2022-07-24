@@ -1,7 +1,8 @@
 import { btnActive, onscroll } from './js/scroll.js';
 import { counter } from './js/counter.js';
 import { body } from './js/variables.js';
-import { isValidIP } from './js/ip.js';
+import { mySlider } from './js/slider.js';
+
 
 // scroll
 addEventListener('scroll', onscroll);
@@ -10,8 +11,8 @@ addEventListener('scroll', btnActive);
 //counter
 counter();
 
-//ip js
-isValidIP('01.222.222.222');
+//slider 
+mySlider();
 
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
@@ -32,13 +33,5 @@ submitButtonClose.addEventListener('click', () => {
   document.querySelector('.submit__message-block').classList.add('submit__message-block--active');
   body.classList.remove('body--active');
 })
-
-
-
-
-
-
-
-
 
 
