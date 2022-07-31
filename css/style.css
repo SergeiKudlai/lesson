@@ -114,6 +114,7 @@ button {
   position: sticky;
   left: 100%;
   bottom: 2rem;
+  z-index: 3;
 }
 
 .main__btn--active {
@@ -214,4 +215,6 @@ button {
 .clock__span {
   display: block;
   text-align: center;
+  font-size: 2rem;
+  border: 0.1rem solid black;
 }
