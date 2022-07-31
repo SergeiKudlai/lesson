@@ -9,6 +9,7 @@ const btnSliderPrev = document.querySelector('.slider__buttons-btn--prev');
 const btnSliderNext = document.querySelector('.slider__buttons-btn--next');
 const sliderImg = document.querySelectorAll('.slider__item');
 const sliderDots = document.querySelectorAll('.slider__dots-item');
+const clockSpan = document.querySelector('.clock__span');
 
 
-export { contactBtn, contactSpan, contactBtnNext, mainBtn, allSection, headerItemLink, body,btnSliderPrev, btnSliderNext,sliderImg,sliderDots};
+export { contactBtn, contactSpan, contactBtnNext, mainBtn, allSection, headerItemLink, body, btnSliderPrev, btnSliderNext, sliderImg, sliderDots, clockSpan };

@@ -2,6 +2,7 @@ import { btnActive, onscroll } from './js/scroll.js';
 import { counter } from './js/counter.js';
 import { body } from './js/variables.js';
 import { mySlider } from './js/slider.js';
+import { clock } from './js/clock.js';
 
 
 // scroll
@@ -14,6 +15,8 @@ counter();
 //slider 
 mySlider();
 
+//clock
+clock();
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
 const submitButton = document.querySelector('.submit__btn');

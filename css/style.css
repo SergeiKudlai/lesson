@@ -206,3 +206,12 @@ button {
   padding: 1rem;
   margin-left: 0.5rem;
 }
+
+.clock__title {
+  margin-bottom: 2rem;
+}
+
+.clock__span {
+  display: block;
+  text-align: center;
+}
