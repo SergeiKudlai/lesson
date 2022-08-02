@@ -3,6 +3,7 @@ import { counter } from './js/counter.js';
 import { body } from './js/variables.js';
 import { mySlider } from './js/slider.js';
 import { clock } from './js/clock.js';
+import { calendar } from './js/calendar.js';
 
 
 // scroll
@@ -17,6 +18,9 @@ mySlider();
 
 //clock
 clock();
+
+//calendar
+calendar();
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
 const submitButton = document.querySelector('.submit__btn');
