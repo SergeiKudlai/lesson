@@ -10,8 +10,9 @@ const btnSliderNext = document.querySelector('.slider__buttons-btn--next');
 const sliderImg = document.querySelectorAll('.slider__item');
 const sliderDots = document.querySelectorAll('.slider__dots-item');
 const clockSpan = document.querySelector('.clock__span');
-const calendarSpan1 = document.querySelector('.calendar__span-1');
-const calendarSpan2 = document.querySelector('.calendar__span-2');
+const calendarMonts = document.querySelector('.calendar__monts');
+const calendarOne = document.querySelector('.calendar__one');
+const calendarTwo = document.querySelector('.calendar__two');
 
 
-export { contactBtn, contactSpan, contactBtnNext, mainBtn, allSection, headerItemLink, body, btnSliderPrev, btnSliderNext, sliderImg, sliderDots, clockSpan, calendarSpan1, calendarSpan2 };
+export { contactBtn, contactSpan, contactBtnNext, mainBtn, allSection, headerItemLink, body, btnSliderPrev, btnSliderNext, sliderImg, sliderDots, clockSpan, calendarMonts, calendarOne, calendarTwo };

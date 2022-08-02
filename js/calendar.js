@@ -1,17 +1,20 @@
-import { calendarSpan1, calendarSpan2 } from './variables.js';
+import { calendarOne, calendarTwo, calendarMonts } from './variables.js';
 
 function calendar() {
   const theDate = new Date()
   const monts = `./img/monts/${theDate.getMonth()}.gif`;
-  const days = [];
+  const days = `./img/numbers/${theDate.getDate()}.gif`;
 
-  // calendarSpan.innerHTML = `<img src="${monts}">`;
+  calendarMonts.innerHTML = `<img src="${monts}">`;
 
-
-
-  calendarSpan1.innerHTML = `<img src="./img/numbers/1.gif">`;
-  calendarSpan2.innerHTML = `<img src="./img/numbers/2.gif">`;
+  if (theDate.getDate() >= 10) {
+    const date = theDate.getDate();
+    const arr = [...'' + date].map(Number);
+    calendarOne.innerHTML = `<img src="./img/numbers/${arr[0]}.gif">`
+    calendarTwo.innerHTML = `<img src="./img/numbers/${arr[1]}.gif">`
+  } else {
+    calendarOne.innerHTML = `<img src="${days}">`
+  };
 };
-
 
 export { calendar };

@@ -20,7 +20,7 @@ mySlider();
 clock();
 
 //calendar
-calendar();
+setInterval(calendar, 10);
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
 const submitButton = document.querySelector('.submit__btn');
