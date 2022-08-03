@@ -42,6 +42,10 @@
         <li class="header__item">
           <a class="header__item-link" href="#clock">clock</a>
         </li>
+
+        <li class="header__item">
+          <a class="header__item-link" href="#event">Event</a>
+        </li>
       </ul>
 
     </nav>
@@ -253,13 +257,29 @@
       </div>
     </section>
 
-    <button class="main__btn main__btn--active" type="button">
+    <section id="event" class="section event">
+      <h2 class="section__title event__title">Event</h2>
+
+      <form class="event__inner" action="">
+
+        <label class="event__text" for="username">Username</label>
+        <input class="event__text-input" type="text" id="username" name="username" autocomplete="off" required>
+
+        <label class="event__pass" for="pass">Password</label>
+        <input class="event__pass-input" type="password" id="pass" name="password" required>
+
+        <button class="event__btn" type="submit">Кнопка</button>
+
+      </form>
+
+    </section>
+
+    <button class=" main__btn main__btn--active" type="button">
     </button>
 
   </main>
 
-  <footer class="footer">
-  </footer>
+  <footer class="footer"></footer>
 
 </body>
 

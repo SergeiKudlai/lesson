@@ -2,6 +2,7 @@
 @import url("./tabs.css");
 @import url("./slider.css");
 @import url("./calendar.css");
+@import url("./event.css");
 
 html {
   box-sizing: border-box;
@@ -220,4 +221,3 @@ button {
   border: 0.1rem solid black;
   margin-bottom: 5rem;
 }
-

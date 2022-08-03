@@ -1,4 +1,6 @@
 import { mainBtn, allSection, headerItemLink } from './variables.js';
+
+
 //button scrollUP
 function btnActive() {
   const pageCur = window.scrollY;

@@ -13,6 +13,7 @@ const clockSpan = document.querySelector('.clock__span');
 const calendarMonts = document.querySelector('.calendar__monts');
 const calendarOne = document.querySelector('.calendar__one');
 const calendarTwo = document.querySelector('.calendar__two');
+const form = document.querySelector('.event__inner');
 
 
-export { contactBtn, contactSpan, contactBtnNext, mainBtn, allSection, headerItemLink, body, btnSliderPrev, btnSliderNext, sliderImg, sliderDots, clockSpan, calendarMonts, calendarOne, calendarTwo };
+export { contactBtn, contactSpan, contactBtnNext, mainBtn, allSection, headerItemLink, body, btnSliderPrev, btnSliderNext, sliderImg, sliderDots, clockSpan, calendarMonts, calendarOne, calendarTwo, form };
