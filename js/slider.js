@@ -52,6 +52,47 @@ function mySlider() {
 
   btnSliderPrev.addEventListener('click', slideActivePrev);
   btnSliderNext.addEventListener('click', slideActiveNext);
+
+  // Two Slider
+
+  const btnPrev = document.querySelector('.twoSlider__btn-button--prev');
+  const btnNext = document.querySelector('.twoSlider__btn-button--next');
+  const slideItems = document.querySelectorAll('.twoSlider__item');
+  const slidImg = document.querySelectorAll('.twoSlider__img');
+
+  let offset = 0;
+
+  function getSlidPrev(value) {
+    for (let item of slideItems) {
+      item.style.right = value + 'px';
+    }
+  }
+
+  btnNext.addEventListener('click', () => {
+    let slideWidth;
+    slidImg.forEach(value => slideWidth = value.width)
+
+    if (offset !== slideWidth * (slidImg.length - 1)) {
+      offset += slideWidth;
+      getSlidPrev(offset);
+    } else {
+      offset = 0;
+      getSlidPrev(offset);
+    }
+  });
+
+  btnPrev.addEventListener('click', () => {
+    let slideWidth;
+    slidImg.forEach(value => slideWidth = value.width)
+
+    if (offset !== 0) {
+      offset -= slideWidth;
+      getSlidPrev(offset);
+    } else {
+      offset = slideWidth * (slidImg.length - 1);
+      getSlidPrev(offset);
+    }
+  });
 }
 
 export { mySlider };
