@@ -93,6 +93,19 @@ function mySlider() {
       getSlidPrev(offset);
     }
   });
+
+
+  function listSlide(elem, event) {
+
+    elem.addEventListener('mousemove', () => {
+      console.log('reset');
+    })
+
+    
+    console.log(event.target);
+  }
+
+  slidImg.forEach(value => value.addEventListener('mousedown', (e) => listSlide(value, e)));
 }
 
 export { mySlider };
