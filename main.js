@@ -4,6 +4,7 @@ import { body } from './js/variables.js';
 import { mySlider } from './js/slider.js';
 import { clock } from './js/clock.js';
 import { calendar } from './js/calendar.js';
+import { getFetch } from './js/fetch.js';
 
 
 // scroll
@@ -21,6 +22,9 @@ clock();
 
 //calendar
 setInterval(calendar, 10);
+
+// fetch
+getFetch();
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
 const submitButton = document.querySelector('.submit__btn');

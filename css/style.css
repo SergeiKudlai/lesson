@@ -2,6 +2,7 @@
 @import url("./tabs.css");
 @import url("./slider.css");
 @import url("./calendar.css");
+@import url("./fetch.css");
 
 html {
   box-sizing: border-box;
