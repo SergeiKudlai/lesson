@@ -4,6 +4,7 @@ import { body } from './js/variables.js';
 import { mySlider } from './js/slider.js';
 import { clock } from './js/clock.js';
 import { calendar } from './js/calendar.js';
+import { wather } from './js/wather.js';
 
 
 // scroll
@@ -15,6 +16,9 @@ counter();
 
 //slider 
 mySlider();
+
+//Wather
+wather();
 
 //clock
 clock();
