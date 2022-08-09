@@ -4,20 +4,21 @@ export function wather() {
   const root = document.getElementById('root');
 
   let store = {
-    city: 'London',
+    city: 'Minsk',
     feelslike: 0,
-    cloudcover: 0,
     temperature: 0,
-    humidity: 0,
     observationTime: '00:00 AM',
-    pressure: 0,
-    uvIndex: 0,
-    visibility: 0,
     isDay: 'yes',
     descriptions: '',
-    windSpeed: 0
+    properties: {
+      cloudcover: 0,
+      humidity: 0,
+      windSpeed: 0,
+      visibility: 0,
+      pressure: 0,
+      uvIndex: 0
+    }
   }
-
 
   const getRenderComponent = () => root.innerHTML = markup();
 
@@ -25,7 +26,7 @@ export function wather() {
 
     const response = await fetch(`${url}&query=${store.city}`);
     const data = await response.json();
-
+    console.log(data);
     const {
       current: { feelslike, cloudcover, temperature, humidity, observation_time: time, pressure, uv_index, visibility, is_day: day, weather_descriptions, wind_speed: wind },
     } = data;
@@ -42,11 +43,15 @@ export function wather() {
       visibility,
       isDay: day,
       descriptions: weather_descriptions[0],
-      windSpeed: wind
+      windSpeed: wind,
+      properties: {
+
+      }
     }
 
     getRenderComponent();
   };
+
 
 
   const getImage = (descriptions) => {
@@ -67,12 +72,15 @@ export function wather() {
   }
 
 
-
   const markup = () => {
 
-    const { city, temperature, descriptions, observationTime } = store;
+    const { city, temperature, descriptions, observationTime , isDay} = store;
 
-    return `<div class="containerr">
+    
+    const containerClass = isDay === 'yes' ? is-day : '';
+
+
+    return `<div class="containerr ${containerClass}">
               <div class="top">
                 <div class="city">
                   <div class="city-subtitle">Weather Today in</div>
@@ -95,8 +103,6 @@ export function wather() {
           <div id="properties"></div>
         </div>`;
   };
-
-
 
   getFetchData();
 }
