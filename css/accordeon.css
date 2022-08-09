@@ -1,0 +1,23 @@
+.accordeon {
+  max-width: 70vw;
+  margin: 5rem auto;
+}
+
+.accordeon__title {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.accordeon__item {
+  border: 1px solid black;
+}
+
+.accordeon__content {
+  background-color: aqua;
+}
+
+.accordeon_none {
+  transition: height 1s ease-in-out;
+  overflow: hidden;
+  height: 0;
+}

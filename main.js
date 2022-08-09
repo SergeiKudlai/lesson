@@ -5,7 +5,7 @@ import { mySlider } from './js/slider.js';
 import { clock } from './js/clock.js';
 import { calendar } from './js/calendar.js';
 import { event } from './js/event.js';
-
+import {accordeon} from './js/accordeon.js'; 
 
 // scroll
 addEventListener('scroll', onscroll);
@@ -13,6 +13,9 @@ addEventListener('scroll', btnActive);
 
 //counter
 counter();
+
+// accordeon
+accordeon();
 
 //slider 
 mySlider();
