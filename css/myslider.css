@@ -1,18 +1,22 @@
 .mySlider {
-  max-width: 94rem;
-  margin: 0 auto;
-  overflow: hidden;
+  position: relative;
 }
 
 .mySlider__inner {
+  max-width: 94rem;
+  margin: 0 auto;
+  overflow: hidden;
   column-gap: 2rem;
   display: flex;
 }
 
 .mySlider__item {
-  max-width: 100%;
+  transition: right 0.5s;
+  position: relative;
+  right: 0;
   width: 31.915%;
   flex-shrink: 0;
+  display: grid;
 }
 
 .item {
@@ -31,4 +35,21 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.mySlider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.mySlider__button--prev {
+  left: auto;
+  right: 0;
+}
+
+.mySlider__btn {
+  border: 1px solid black;
+  padding: 2rem;
 }

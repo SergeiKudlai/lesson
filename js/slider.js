@@ -1,6 +1,6 @@
 import { btnSliderPrev, btnSliderNext, sliderImg, sliderDots } from './variables.js';
 
-function mySlider() {
+export function mySlider() {
 
   let index = 0;
 
@@ -101,11 +101,61 @@ function mySlider() {
       console.log('reset');
     })
 
-    
+
     console.log(event.target);
   }
 
   slidImg.forEach(value => value.addEventListener('mousedown', (e) => listSlide(value, e)));
+
+
+
+
+
+  // Three slider
+  const sliderItem = document.querySelectorAll('.mySlider__item');
+  const slideNext = document.querySelector('.mySlider__btn--next');
+  const slidePrev = document.querySelector('.mySlider__btn--prev');
+
+  let arr = [];
+  sliderItem.forEach((value, index) => { (index === 1 || index === 2) && arr.push(value.offsetLeft) });
+  const sum = arr.reverse().reduce((acc, value) => { acc -= value; return acc });
+
+
+  let elemRight = 0;
+
+  const getElementClick = (num) => {
+    sliderItem.forEach(element => {
+      element.style.right = num + 'px';
+    })
+  }
+
+
+
+  slideNext.addEventListener('click', () => {
+    let slideWidth = 0;
+    sliderItem.forEach(value => slideWidth = value.clientWidth + (sum - value.clientWidth));
+
+    if (elemRight !== slideWidth * (sliderItem.length - 3)) {
+      getElementClick(elemRight += slideWidth)
+    } else {
+      getElementClick(elemRight = 0);
+    }
+  });
+
+
+  slidePrev.addEventListener('click', () => {
+    let slideWidth = 0;
+    sliderItem.forEach(value => slideWidth = value.clientWidth + 20);
+
+    if (elemRight !== 0) {
+      getElementClick(elemRight -= slideWidth)
+    } else {
+      getElementClick(elemRight = slideWidth * (sliderItem.length - 3));
+    }
+  })
+
+
+
 }
 
-export { mySlider };
+
