@@ -1,0 +1,34 @@
+.mySlider {
+  max-width: 94rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mySlider__inner {
+  column-gap: 2rem;
+  display: flex;
+}
+
+.mySlider__item {
+  max-width: 100%;
+  width: 31.915%;
+  flex-shrink: 0;
+}
+
+.item {
+  border: 1px solid black;
+}
+
+.item__wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 134.23%;
+}
+
+.item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
