@@ -1,5 +1,8 @@
 import { scroll } from './jsPageTwo/scroll.js';
-import { gallery } from './jsPageTwo/gallery.js';
+import { Gallery } from './jsPageTwo/gallerylibs.js';
+
 
 scroll();
-gallery();
+
+
+new Gallery(document.getElementById('wrapper'));
