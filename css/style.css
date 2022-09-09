@@ -3,6 +3,7 @@
 @import url("./slider.css");
 @import url("./calendar.css");
 @import url("./event.css");
+@import url("./myslider.css");
 @import url("./accordeon.css");
 
 html {
@@ -38,10 +39,20 @@ img {
   display: block;
 }
 
+aside {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
 }
 
 p {
