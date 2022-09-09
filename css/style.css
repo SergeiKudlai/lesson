@@ -3,6 +3,7 @@
 @import url("./slider.css");
 @import url("./calendar.css");
 @import url("./gallery.css");
+@import url("./sliderPart1.css");
 
 html {
   box-sizing: border-box;

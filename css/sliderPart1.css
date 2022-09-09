@@ -1,0 +1,50 @@
+.part1 {
+  background-color: gray;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.part1__inner {
+  flex: 0 1 100%;
+  display: flex;
+  padding: 0 2rem;
+  column-gap: 1rem;
+}
+
+.part1__slide {
+  position: relative;
+  height: 50vh;
+  cursor: pointer;
+  flex-grow: 1;
+  transition: flex-grow 0.5s ease-in-out;
+}
+
+.part1__slide h3 {
+  position: absolute;
+  color: white;
+  font-size: 2.4rem;
+  bottom: 2rem;
+  left: 2rem;
+  opacity: 0;
+}
+
+.part1__slide--active {
+  flex-grow: 10;
+}
+
+.part1__slide.part1__slide--active h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.4s;
+}
+
+.part1__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
