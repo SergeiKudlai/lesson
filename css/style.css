@@ -7,6 +7,7 @@
 @import url("./accordeon.css");
 @import url("./gallery.css");
 @import url("./sliderPart1.css");
+@import url("../scss/shop.css");
 
 html {
   box-sizing: border-box;
@@ -163,6 +164,10 @@ button {
   width: 100%;
   height: 100%;
   background-color: red;
+}
+
+.submit__inner {
+  margin-bottom: 5rem;
 }
 
 .submit__message-block {

@@ -1,0 +1,51 @@
+.shop {
+  &__cart {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  &__box {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+  }
+
+  &__buttons-inner {
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: center;
+  }
+
+  &__buttons-item {
+    flex: 1 1 auto;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid black;
+  }
+
+  &__pages {
+    width: 50rem;
+    height: 10rem;
+    border: 1px solid red;
+  }
+}

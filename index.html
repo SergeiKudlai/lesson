@@ -54,7 +54,6 @@
 
   <main class="main container">
 
-
     <section id="home" class="section home">
       <h2 class="home__title section__title">Home</h2>
       <ul class="home__list">
@@ -350,7 +349,8 @@
               </div>
 
               <div class="item__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta illo delectus minima quisquam alias! Cupiditate optio quidem error eligendi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta illo delectus minima
+                quisquam alias! Cupiditate optio quidem error eligendi.
               </div>
 
             </article>
@@ -445,9 +445,13 @@
         <li class="accordeon__item accordeon__content accordeon_none">
           <h3 class="accordeon__content-title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta obcaecati quasi laudantium. Aliquam magnam ex est aperiam laboriosam, esse rem! Aliquam at ipsum odio voluptas beatae maxime? Ex, eaque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nisi dicta saepe et ipsa quod, nihil illo harum rerum veritatis laudantium iusto in, debitis deserunt quam delectus nesciunt provident quia!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni, fuga dolorem perferendis vitae et quis nulla modi reiciendis impedit commodi odio. Dicta quos reiciendis laborum amet nostrum voluptatibus exercitationem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta obcaecati quasi laudantium. Aliquam
+            magnam ex est aperiam laboriosam, esse rem! Aliquam at ipsum odio voluptas beatae maxime? Ex, eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nisi dicta saepe et ipsa quod, nihil illo
+            harum rerum veritatis laudantium iusto in, debitis deserunt quam delectus nesciunt provident quia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni, fuga dolorem perferendis vitae et quis
+            nulla modi reiciendis impedit commodi odio. Dicta quos reiciendis laborum amet nostrum voluptatibus
+            exercitationem!
             lorem1000
           </h3>
         </li>
@@ -485,7 +489,9 @@
         <li class="accordeon__item accordeon__content accordeon_none">
           <h3 class="accordeon__content-title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eum qui optio adipisci debitis vero reprehenderit numquam, facere porro ab reiciendis atque distinctio est hic expedita consequuntur ipsa corrupti doloribus?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eum qui optio adipisci debitis vero
+            reprehenderit numquam, facere porro ab reiciendis atque distinctio est hic expedita consequuntur ipsa
+            corrupti doloribus?
           </h3>
         </li>
       </ul>
@@ -495,24 +501,76 @@
     <section id="submit" class="section submit ">
       <h2 class="section__title">Секция 2</h2>
 
-      <input type="text" class="submit__subject">
-      <button class="submit__btn" type="submit">Submit</button>
+      <div class="submit__inner">
+        <input type="text" class="submit__subject">
+        <button class="submit__btn" type="submit">Submit</button>
 
-      <div class="submit__message-block submit__message-block--active">
+        <div class="submit__message-block submit__message-block--active">
 
-        <div class="submit__message">
+          <div class="submit__message">
 
-          <p class="submit__text">Text:
+            <p class="submit__text">Text:
+              <br>
+              <span class="submit__result"></span>
+            </p>
+
             <br>
-            <span class="submit__result"></span>
-          </p>
+            <button class="submit__close-btn">OK</button>
 
-          <br>
-          <button class="submit__close-btn">OK</button>
-
+          </div>
         </div>
       </div>
 
+
+      <div class="shop">
+        <span class="shop__cart"></span>
+
+        <ul class="shop__inner">
+          <li class="shop__item">
+            <article class="shop__box">
+              <h2 class="shop__title">apple</h2>
+
+              <ul class="shop__buttons-inner">
+                <li class="shop__buttons-item">
+                  <button class="shop__btn shop__btn--minus" type="button" data-id="apple">
+                    Минус
+                  </button>
+                </li>
+
+                <li class="shop__buttons-item">
+                  <button class="shop__btn shop__btn--plus" type="button" data-id="apple">
+                    Плюс
+                  </button>
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="shop__item">
+            <article class="shop__box">
+              <h2 class="shop__title">banan</h2>
+              <ul class="shop__buttons-inner">
+                <li class="shop__buttons-item">
+                  <button class="shop__btn shop__btn--minus" type="button" data-id="banan">
+                    Минус
+                  </button>
+                </li>
+
+                <li class="shop__buttons-item">
+                  <button class="shop__btn shop__btn--plus" type="button" data-id="banan">
+                    Плюс
+                  </button>
+                </li>
+              </ul>
+
+            </article>
+          </li>
+        </ul>
+
+        <div class="shop__pages">
+
+        </div>
+      </div>
     </section>
 
     <section id="clock" class="section clock">

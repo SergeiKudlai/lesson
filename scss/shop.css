@@ -1,0 +1,44 @@
+.shop__cart {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  display: flex;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.shop__title {
+  text-align: center;
+}
+.shop__inner {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-bottom: 10rem;
+}
+.shop__box {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+}
+.shop__buttons-inner {
+  display: flex;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  justify-content: center;
+}
+.shop__buttons-item {
+  flex: 1 1 auto;
+}
+.shop__btn {
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid black;
+}
+.shop__pages {
+  width: 50rem;
+  height: 10rem;
+  border: 1px solid red;
+}/*# sourceMappingURL=shop.css.map */
