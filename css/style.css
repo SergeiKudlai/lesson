@@ -2,14 +2,11 @@
 @import url("./tabs.css");
 @import url("./slider.css");
 @import url("./calendar.css");
-<<<<<<< HEAD
 @import url("./event.css");
 @import url("./myslider.css");
 @import url("./accordeon.css");
-=======
 @import url("./gallery.css");
 @import url("./sliderPart1.css");
->>>>>>> fix_6-gallery
 
 html {
   box-sizing: border-box;
