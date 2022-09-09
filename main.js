@@ -4,7 +4,8 @@ import { body } from './js/variables.js';
 import { mySlider } from './js/slider.js';
 import { clock } from './js/clock.js';
 import { calendar } from './js/calendar.js';
-
+import { event } from './js/event.js';
+import {accordeon} from './js/accordeon.js'; 
 
 // scroll
 addEventListener('scroll', onscroll);
@@ -12,6 +13,9 @@ addEventListener('scroll', btnActive);
 
 //counter
 counter();
+
+// accordeon
+accordeon();
 
 //slider 
 mySlider();
@@ -21,6 +25,9 @@ clock();
 
 //calendar
 setInterval(calendar, 10);
+
+//event
+event();
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
 const submitButton = document.querySelector('.submit__btn');
@@ -40,5 +47,6 @@ submitButtonClose.addEventListener('click', () => {
   document.querySelector('.submit__message-block').classList.add('submit__message-block--active');
   body.classList.remove('body--active');
 })
+
 
 

@@ -10,9 +10,13 @@ function clock() {
 
     if (dateHorse < 10) {
       dateHorse = '0' + dateHorse;
-    } else if (dateMinuts < 10) {
+    }
+
+    if (dateMinuts < 10) {
       dateMinuts = '0' + dateMinuts;
-    } else if (dateSeconds < 10) {
+    }
+
+    if (dateSeconds < 10) {
       dateSeconds = '0' + dateSeconds;
     }
 

@@ -1,0 +1,16 @@
+.event__title {
+  margin-bottom: 2rem;
+}
+
+.event__inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.event__btn {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}

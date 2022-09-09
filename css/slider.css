@@ -1,6 +1,7 @@
 .slider {
   position: relative;
   z-index: 1;
+  margin-bottom: 5rem;
 }
 
 .slider__inner {
@@ -55,3 +56,33 @@
   background-color: black;
 }
 
+.twoSlider {
+  margin-bottom: 4rem;
+}
+
+.twoSlider__inner {
+  width: 30rem;
+  height: 30rem;
+  border: 0.1rem solid black;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.twoSlider__item {
+  transition: all 1s ease;
+  position: relative;
+  right: 0;
+}
+
+.twoSlider__btn {
+  display: flex;
+  justify-content: center;
+  column-gap: 6rem;
+}
+
+.twoSlider__btn-button {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
