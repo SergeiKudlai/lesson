@@ -10,14 +10,25 @@ export function store() {
     const currentWrapper = data.closest('.details__list');
     const current = currentWrapper.querySelector('.details__current');
     current.textContent++;
+    getClickCart(data);
   }
 
   function setFunctionMinus(data) {
     const currentWrapper = data.closest('.details__list');
     const current = currentWrapper.querySelector('.details__current');
-    if (current.textContent !== '0') current.textContent--;
+    if (current.textContent !== '0') {
+      current.textContent--;
+      getClickCart(data);
+    }
     if (current.textContent < '1') setDeleteCart(data);
   }
+
+  // проверка клико по кнопкам корзины
+  function getClickCart(elem) {
+    const cartWrapper = elem.closest('.cart__inner');
+    cartWrapper && getTotalPriceCart();
+  }
+
 
   function setDeleteCart(elem) {
     const cartWrapper = elem.closest('.cart__inner');
@@ -67,6 +78,7 @@ export function store() {
     currentRestart.textContent = 0;
   }
 
+  // обёртка всех элементов в корзине
   const cartWrapper = document.querySelector('.cart__inner');
 
   // добавление видимости корзины
@@ -78,7 +90,7 @@ export function store() {
     }
   }
 
-
+  // добавление товара в HTML
   function setElementCartHtml(data) {
 
     const { id, title, price, counter, imgSrc, weight } = data;
@@ -89,6 +101,7 @@ export function store() {
     if (itemIncart) {
       const counterElement = itemIncart.querySelector('.details__current');
       counterElement.textContent = +counterElement.textContent + +counter;
+      getTotalPriceCart();
       return;
     }
 
@@ -112,13 +125,48 @@ export function store() {
         </li>
       </ul>
 
-        <span class="cart__price">${price}$</span>
+        <span class="cart__price" data-price>${price}$</span>
         <span class="cart__weight">${weight}г.</span>
       </div>
     `
     cartWrapper.insertAdjacentHTML('beforeend', cartHtml);
+
+    getTotalPriceCart();
   }
 
+  // общая цена
+  function getTotalPriceCart() {
+    const priceAllItems = cartWrapper.querySelectorAll('[data-price]');
+    const counterAllItems = cartWrapper.querySelectorAll('[data-counter]');
+    let totalPrice = 0;
+
+    for (let i = 0; i < priceAllItems.length; i++) {
+      const prices = priceAllItems[i].textContent.slice(0, -1);
+      const counters = counterAllItems[i].textContent;
+      totalPrice += (+prices * +counters);
+    }
+
+    const cart = cartWrapper.closest('.cart');
+    const cartTotalPrice = cart.querySelector('.cart__total-price');
+    cartTotalPrice.textContent = `Итого:${totalPrice}`;
+
+    getDelivery(totalPrice, cart);
+  }
+
+  // доставка бесплатно добавление класса
+  function getDelivery(sum, wrapperElem) {
+    const deliveryPaid = wrapperElem.querySelector('.cart__delivery-paid');
+    const deliveryPrice = wrapperElem.querySelector('.cart__delivery-free');
+    const priceFree = deliveryPrice.dataset.delivery;
+
+    if (sum >= +priceFree) {
+      deliveryPrice.removeAttribute('hidden');
+      deliveryPaid.setAttribute('hidden', '');
+    } else {
+      deliveryPrice.setAttribute('hidden', '');
+      deliveryPaid.removeAttribute('hidden');
+    }
+  }
 
 
 

@@ -166,6 +166,10 @@ button {
   background-color: red;
 }
 
+.submit__inner {
+  margin-bottom: 5rem;
+}
+
 .submit__message-block {
   position: fixed;
   top: 0;

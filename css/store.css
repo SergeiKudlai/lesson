@@ -1,6 +1,7 @@
 .store {
-  padding-top: 10rem;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
 .store__cards {
@@ -51,8 +52,6 @@
   background-color: aqua;
 }
 
-.store__cart {}
-
 .cart {
   display: none;
 }
@@ -68,9 +67,6 @@
 .cart__item {
   border: 1px solid black;
   text-align: center;
-}
-
-.cart__item:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -78,4 +74,52 @@
 .cart__price,
 .cart__weight {
   display: block;
+}
+
+.cart__total {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.cart__delivery {
+  margin-bottom: 1.5em;
+}
+
+.cart__delivery-paid {
+  color: red;
+}
+
+.cart__delivery-free {
+  color: green;
+}
+
+.cart__order {
+  margin-bottom: 2rem;
+}
+
+.order__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  align-self: stretch;
+}
+
+.form__button {
+  padding: 1.5rem;
+  border: 1px solid black;
+  display: inline-block;
+  width: 100%;
 }
