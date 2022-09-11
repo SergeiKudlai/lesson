@@ -6,7 +6,8 @@ import { clock } from './js/clock.js';
 import { calendar } from './js/calendar.js';
 import { slidePart1 } from './js/slidePart1.js';
 import { event } from './js/event.js';
-import {accordeon} from './js/accordeon.js'; 
+import { accordeon } from './js/accordeon.js';
+import { store } from './js/store.js';
 
 // scroll
 addEventListener('scroll', onscroll);
@@ -32,6 +33,9 @@ event();
 
 // sliderPart1
 slidePart1();
+
+//store 
+store();
 
 const headerItemLink = document.querySelectorAll('.header__item-link');
 const submitButton = document.querySelector('.submit__btn');

@@ -350,7 +350,8 @@
               </div>
 
               <div class="item__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta illo delectus minima quisquam alias! Cupiditate optio quidem error eligendi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta illo delectus minima
+                quisquam alias! Cupiditate optio quidem error eligendi.
               </div>
 
             </article>
@@ -445,9 +446,13 @@
         <li class="accordeon__item accordeon__content accordeon_none">
           <h3 class="accordeon__content-title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta obcaecati quasi laudantium. Aliquam magnam ex est aperiam laboriosam, esse rem! Aliquam at ipsum odio voluptas beatae maxime? Ex, eaque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nisi dicta saepe et ipsa quod, nihil illo harum rerum veritatis laudantium iusto in, debitis deserunt quam delectus nesciunt provident quia!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni, fuga dolorem perferendis vitae et quis nulla modi reiciendis impedit commodi odio. Dicta quos reiciendis laborum amet nostrum voluptatibus exercitationem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta obcaecati quasi laudantium. Aliquam
+            magnam ex est aperiam laboriosam, esse rem! Aliquam at ipsum odio voluptas beatae maxime? Ex, eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nisi dicta saepe et ipsa quod, nihil illo
+            harum rerum veritatis laudantium iusto in, debitis deserunt quam delectus nesciunt provident quia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni, fuga dolorem perferendis vitae et quis
+            nulla modi reiciendis impedit commodi odio. Dicta quos reiciendis laborum amet nostrum voluptatibus
+            exercitationem!
             lorem1000
           </h3>
         </li>
@@ -485,7 +490,9 @@
         <li class="accordeon__item accordeon__content accordeon_none">
           <h3 class="accordeon__content-title">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eum qui optio adipisci debitis vero reprehenderit numquam, facere porro ab reiciendis atque distinctio est hic expedita consequuntur ipsa corrupti doloribus?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eum qui optio adipisci debitis vero
+            reprehenderit numquam, facere porro ab reiciendis atque distinctio est hic expedita consequuntur ipsa
+            corrupti doloribus?
           </h3>
         </li>
       </ul>
@@ -512,6 +519,90 @@
 
         </div>
       </div>
+
+
+      <!-- Родительская обертка -->
+      <div class="store">
+
+        <!-- товары -->
+        <div class="store__cards card">
+          <!-- обложка карточек -->
+          <ul class="card__inner">
+            <!-- карточка -->
+            <li class="card__item">
+              <article class="card__box" data-id="1">
+
+                <h3 class="card__title">Apple</h3>
+
+                <img class="card__images" src="./img/shop/apple.jpg" alt="apple" width="200" height="200">
+
+                <div class="card__wrapper details">
+                  <ul class="details__list">
+                    <li class="details__button">
+                      <button class="details__btn" type="button" data-action="minus">-</button>
+                    </li>
+
+                    <li class="details__current" data-counter>0</li>
+
+                    <li class="details__button">
+                      <button class="details__btn" type="button" data-action="plus">+</button>
+                    </li>
+                  </ul>
+
+                  <ul class="details__price">
+                    <li class="details__price-weight">100г</li>
+                    <li class="details__price-currency">100$</li>
+                  </ul>
+                </div>
+
+                <button class="card__buttnons" type="button" data-cart>В корзину</button>
+
+              </article>
+            </li>
+
+            <!-- карточка -->
+            <li class="card__item">
+              <article class="card__box" data-id="2">
+
+                <h3 class="card__title">Banan</h3>
+
+                <img class="card__images" src="./img/shop/banan.png" alt="banan" width="200" height="200">
+
+                <div class="card__wrapper details">
+                  <ul class="details__list">
+                    <li class="details__button">
+                      <button class="details__btn" type="button" data-action="minus">-</button>
+                    </li>
+
+                    <li class="details__current" data-counter>0</li>
+
+                    <li class="details__button">
+                      <button class="details__btn" type="button" data-action="plus">+</button>
+                    </li>
+                  </ul>
+
+                  <ul class="details__price">
+                    <li class="details__price-weight">50г</li>
+                    <li class="details__price-currency">80$</li>
+                  </ul>
+                </div>
+
+                <button class="card__buttnons" type="button" data-cart>В корзину</button>
+
+              </article>
+            </li>
+          </ul>
+        </div>
+
+        <!-- корзина -->
+        <div class="store__cart cart cart--active">
+          <h2 class="cart__title">Ваш заказ</h2>
+
+          <!-- обёртка вставки элементов -->
+          <div class="cart__inner">
+            <!--вставка элемента-->
+          </div>
+        </div>
 
     </section>
 
