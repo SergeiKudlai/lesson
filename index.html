@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <header class="header container">
+            <h1 class="sr-only">Header</h1>
+
+            <ul class="header__list">
+                <li class="header__item">
+                    <button class="header__btn" type="button" data-btn="1" style="color: blue;">Photo_1</a>
+                </li>
+
+                <li class="header__item">
+                    <button class="header__btn" type="button" data-btn="2">Photo_2</a>
+                </li>
+
+                <li class="header__item">
+                    <button class="header__btn" type="button" data-btn="3">Photo_3</a>
+                </li>
+            </ul>
+        </header>
+
+        <main class=" main">
+
+            <section class="photo container ">
+
+                <ul class="photo_items">
+                    <li class="photo__item" data-img="1">
+                        <img class="photo__img" src="./images/IMG_3344.JPG" alt="photo_1">
+                    </li>
+
+                    <li class="photo__item" data-img="2" hidden>
+                        <img class="photo__img" src="./images/IMG_3366.JPG" alt="photo_2">
+                    </li>
+
+                    <li class="photo__item" data-img="3" hidden>
+                        <img class="photo__img" src="./images/IMG_3399.JPG" alt="photo_3">
+                    </li>
+                </ul>
+
+            </section>
+
+            <section class="slider container">
+                <h2 class="sr-only">slider</h2>
+
+                <div class="slider__container">
+                    <ul class="slider__inner">
+                        <li class="slider__item">
+                            <img class="slider__img" src="./images/IMG_3399.JPG" alt="slide_1">
+                        </li>
+
+                        <li class="slider__item" style="display: none;">
+                            <img class="slider__img" src="./images/IMG-efe92257ee3c63419504071e31ecdd4f-V (1).jpg"
+                                alt="slider_2">
+                        </li>
+
+                        <li class="slider__item" style="display: none;">
+                            <img class="slider__img" src="./images/IMG_20220702_094112.jpg" alt="slider_3">
+                        </li>
+
+                        <li class="slider__item" style="display: none;">
+                            <img class="slider__img" src="./images/IMG_20220810_191302.jpg" alt="slide_4">
+                        </li>
+                    </ul>
+
+                    <ul class="slider__buttons">
+                        <li class="slider__btn">
+                            <button class="slider__button slider__button--prev" type="button">&lt</button>
+                        </li>
+
+                        <li class="slider__btn">
+                            <button class="slider__button slider__button--next" type="button">&gt</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="animation container">
+                <button class="btn btn__left" type="button">&lt</button>
+
+                <div class="corusel__wrapper">
+                    <div class="corusel__inner">
+                        <ul class="corusel__box corusel__box--left">
+                            <li class="corusel__item">1</li>
+                            <li class="corusel__item">1</li>
+                            <li class="corusel__item">1</li>
+                        </ul>
+
+                        <ul class="corusel__box corusel__box--active">
+                            <li class="corusel__item">2</li>
+                            <li class="corusel__item">2</li>
+                            <li class="corusel__item">2</li>
+                        </ul>
+
+                        <ul class="corusel__box corusel__box--right">
+                            <li class="corusel__item">3</li>
+                            <li class="corusel__item">3</li>
+                            <li class="corusel__item">3</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="btn btn__right" type="button">&gt</button>
+            </section>
+
+        </main>
+
+        <footer class="footer container">
+            <div class="footer__inner">
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./index.js"></script>
 </body>
+
 </html>
