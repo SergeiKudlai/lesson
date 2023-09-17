@@ -1,0 +1,10 @@
+.animation {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.animation__inner {
+    height: 100vh;
+    border: 1px solid green;
+}
