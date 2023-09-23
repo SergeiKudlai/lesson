@@ -1,0 +1,105 @@
+.accordion {
+    background-color: rgba(128, 128, 128, 0.2);
+    width: 75vw;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+
+    &:hover {
+        .accordion {
+            &__text {
+                color: black;
+            }
+
+            &__icon {
+                display: block;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inner {
+        border-top: 1px solid gray;
+        padding: 1rem 0;
+        position: relative;
+        cursor: pointer;
+        transition: box-shadow 0.5s ease-in-out;
+
+        &:hover {
+            box-shadow: inset 0 10px 20px 2px rgba(125, 125, 125, 0.25);
+        }
+    }
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            ~ .accordion {
+                &__box {
+                    > .accordion {
+                        &__text {
+                            color: black;
+                        }
+
+                        &__icon {
+                            &::before {
+                                content: "x";
+                            }
+                        }
+                    }
+                }
+
+                &__images {
+                    width: 20rem;
+                    height: 20rem;
+                }
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__text {
+        color: blue;
+    }
+
+    &__icon {
+        display: none;
+
+        &::before {
+            content: "+";
+            width: 2rem;
+            height: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__images {
+        display: block;
+        background: url("../assets/contentImg/IMG_2571.JPG") no-repeat center / cover;
+        margin: 0 auto;
+        height: 0;
+        max-width: 20rem;
+        transition: height 0.5s ease-in-out;
+    }
+}
